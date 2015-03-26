@@ -177,7 +177,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.1-Subsetting-Data">4.1 Subsetting Data<a class="anchor-link" href="#4.1-Subsetting-Data">&#182;</a></h2>
+<h2 id="4.1a-Subsetting-Data">4.1a Subsetting Data<a class="anchor-link" href="#4.1a-Subsetting-Data">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -203,7 +203,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># load libraries</span>
@@ -218,7 +218,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># ipython magic method for inline plots</span>
@@ -255,7 +255,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># create a table in which each row is a date, each column is a city, each cell is a temperature</span>
@@ -271,7 +271,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># create a tuple defining the dimensions of the data frame (59x5)</span>
@@ -285,7 +285,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random_integers</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="n">dim</span><span class="p">),</span> 
@@ -303,7 +303,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[56]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -322,42 +322,42 @@ div#notebook {
     <tr>
       <th>2014-01-01</th>
       <td> 27</td>
-      <td> 23</td>
-      <td> 29</td>
-      <td> 11</td>
-      <td> -4</td>
+      <td>-14</td>
+      <td> -1</td>
+      <td> 21</td>
+      <td>-12</td>
     </tr>
     <tr>
       <th>2014-01-02</th>
-      <td> 15</td>
-      <td> 35</td>
-      <td> 28</td>
-      <td>  3</td>
-      <td> -2</td>
+      <td> 10</td>
+      <td> 17</td>
+      <td>-13</td>
+      <td>-19</td>
+      <td>-15</td>
     </tr>
     <tr>
       <th>2014-01-03</th>
-      <td> 34</td>
-      <td> 30</td>
-      <td> 13</td>
-      <td> 11</td>
+      <td>  0</td>
+      <td> -2</td>
       <td>  7</td>
+      <td> -4</td>
+      <td> 28</td>
     </tr>
     <tr>
       <th>2014-01-04</th>
-      <td> 22</td>
-      <td> 23</td>
-      <td> 15</td>
-      <td>-12</td>
-      <td> 40</td>
+      <td> 20</td>
+      <td>  6</td>
+      <td> 11</td>
+      <td> 28</td>
+      <td> 26</td>
     </tr>
     <tr>
       <th>2014-01-05</th>
-      <td> -1</td>
-      <td>  2</td>
-      <td> 37</td>
+      <td> 36</td>
       <td> 39</td>
-      <td> 17</td>
+      <td> 23</td>
+      <td> -2</td>
+      <td> 14</td>
     </tr>
   </tbody>
 </table>
@@ -393,7 +393,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># ranges of rows and columns</span>
@@ -409,7 +409,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[57]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -425,21 +425,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>2014-01-04</th>
-      <td> 22</td>
-      <td> 23</td>
-      <td> 15</td>
+      <td> 20</td>
+      <td>  6</td>
+      <td> 11</td>
     </tr>
     <tr>
       <th>2014-01-05</th>
-      <td> -1</td>
-      <td>  2</td>
-      <td> 37</td>
+      <td> 36</td>
+      <td> 39</td>
+      <td> 23</td>
     </tr>
     <tr>
       <th>2014-01-06</th>
-      <td>  1</td>
-      <td> -1</td>
-      <td>-12</td>
+      <td>-14</td>
+      <td> 32</td>
+      <td> 26</td>
     </tr>
   </tbody>
 </table>
@@ -454,7 +454,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># specific rows and columns</span>
@@ -470,7 +470,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[58]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -485,18 +485,18 @@ div#notebook {
   <tbody>
     <tr>
       <th>2014-01-04</th>
-      <td>-12</td>
-      <td> 23</td>
+      <td> 28</td>
+      <td>  6</td>
     </tr>
     <tr>
       <th>2014-01-21</th>
-      <td> -4</td>
+      <td> 31</td>
       <td> 15</td>
     </tr>
     <tr>
       <th>2014-02-19</th>
-      <td> 20</td>
-      <td> 11</td>
+      <td> 22</td>
+      <td>-18</td>
     </tr>
   </tbody>
 </table>
@@ -511,7 +511,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># some rows and all columns</span>
@@ -527,7 +527,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[59]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -545,35 +545,35 @@ div#notebook {
   <tbody>
     <tr>
       <th>2014-01-04</th>
-      <td> 22</td>
-      <td> 23</td>
-      <td> 15</td>
-      <td>-12</td>
-      <td> 40</td>
+      <td> 20</td>
+      <td>  6</td>
+      <td> 11</td>
+      <td> 28</td>
+      <td> 26</td>
     </tr>
     <tr>
       <th>2014-01-10</th>
-      <td>-14</td>
-      <td>-11</td>
-      <td> 39</td>
-      <td>  4</td>
-      <td>-14</td>
+      <td>-20</td>
+      <td> 24</td>
+      <td>  1</td>
+      <td> 40</td>
+      <td> 22</td>
     </tr>
     <tr>
       <th>2014-01-12</th>
-      <td>-13</td>
-      <td>  2</td>
-      <td> 28</td>
-      <td>-17</td>
-      <td> 25</td>
+      <td> 37</td>
+      <td> 19</td>
+      <td> 16</td>
+      <td> 37</td>
+      <td> 16</td>
     </tr>
     <tr>
       <th>2014-01-14</th>
-      <td>-18</td>
-      <td>-19</td>
-      <td> 24</td>
-      <td>  8</td>
-      <td> 20</td>
+      <td>-12</td>
+      <td> 28</td>
+      <td>  1</td>
+      <td>  1</td>
+      <td> 14</td>
     </tr>
   </tbody>
 </table>
@@ -597,7 +597,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># load the data set</span>
@@ -616,7 +616,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[60]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -782,7 +782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># set index</span>
@@ -800,7 +800,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[36]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[61]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -990,7 +990,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># transpose</span>
@@ -1007,7 +1007,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[37]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[62]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1173,7 +1173,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># subset 4 countries</span>
@@ -1191,7 +1191,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[42]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[63]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1254,7 +1254,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># plot mortalities</span>
@@ -1270,11 +1270,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[43]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[64]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fcc15056f10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f93b3fd7d50&gt;</pre>
 </div>
 
 </div>
@@ -1658,6 +1658,1509 @@ IDx1rQZagJuzrL0X+hsIP2ZrgMXAkVnWT3CL7iPMRFkRXxOBQwiDvOuizuGJc74TNa4FLsyq/l5q
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.1b-Subsetting-by-filtering-and-boolean-indexing">4.1b Subsetting by filtering and boolean indexing<a class="anchor-link" href="#4.1b-Subsetting-by-filtering-and-boolean-indexing">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is similar to db querying procedures. Pandas actually uses "queries" and "filters" for this subsetting.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.11-Environment-setup">4.11 Environment setup<a class="anchor-link" href="#4.11-Environment-setup">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># load libraries</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="c"># magic method to allow notebook inline plotting</span>
+<span class="o">%</span><span class="k">pylab</span> inline
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Populating the interactive namespace from numpy and matplotlib
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># Set Pandas default display options</span>
+
+<span class="n">pandas</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Load-data-set">Load data set<a class="anchor-link" href="#Load-data-set">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># create df from csv</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">&#39;https://raw.github.com/alfredessa/pdacookbook/master/data/auto.csv&#39;</span>
+
+<span class="n">auto</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>    
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># output is limited to 10 rows (head &amp; tail) by: pandas.set_option(&#39;display.max_rows&#39;, 10)</span>
+
+<span class="n">auto</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[68]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>make</th>
+      <th>price</th>
+      <th>mpg</th>
+      <th>repairs</th>
+      <th>weight</th>
+      <th>length</th>
+      <th>foreign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0 </th>
+      <td>       AMC</td>
+      <td> 4099</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2930</td>
+      <td> 186</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>1 </th>
+      <td>       AMC</td>
+      <td> 4749</td>
+      <td> 17</td>
+      <td> 3</td>
+      <td> 3350</td>
+      <td> 173</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>2 </th>
+      <td>       AMC</td>
+      <td> 3799</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2640</td>
+      <td> 168</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>3 </th>
+      <td>      Audi</td>
+      <td> 9690</td>
+      <td> 17</td>
+      <td> 5</td>
+      <td> 2830</td>
+      <td> 189</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>4 </th>
+      <td>      Audi</td>
+      <td> 6295</td>
+      <td> 23</td>
+      <td> 3</td>
+      <td> 2070</td>
+      <td> 174</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td> Chevrolet</td>
+      <td> 3955</td>
+      <td> 19</td>
+      <td> 3</td>
+      <td> 3430</td>
+      <td> 197</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>    Datsun</td>
+      <td> 6229</td>
+      <td> 23</td>
+      <td> 4</td>
+      <td> 2370</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>    Datsun</td>
+      <td> 4589</td>
+      <td> 35</td>
+      <td> 5</td>
+      <td> 2020</td>
+      <td> 165</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>    Datsun</td>
+      <td> 5079</td>
+      <td> 24</td>
+      <td> 4</td>
+      <td> 2280</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>    Datsun</td>
+      <td> 8129</td>
+      <td> 21</td>
+      <td> 4</td>
+      <td> 2750</td>
+      <td> 184</td>
+      <td> 1</td>
+    </tr>
+  </tbody>
+</table>
+<p>26 rows × 7 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.13-Subset-by-applying-filters">4.13 Subset by applying filters<a class="anchor-link" href="#4.13-Subset-by-applying-filters">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Filters return boolean indices??</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># search in column &quot;foreign&quot; for value == 1</span>
+
+<span class="c"># returns a boolean index</span>
+<span class="n">auto</span><span class="o">.</span><span class="n">foreign</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[69]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    False
+1    False
+2    False
+...
+23    True
+24    True
+25    True
+Name: foreign, Length: 26, dtype: bool</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># create a mask to do the filtering</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">auto</span><span class="o">.</span><span class="n">foreign</span><span class="o">==</span><span class="mi">1</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">mask</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[71]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    False
+1    False
+2    False
+...
+23    True
+24    True
+25    True
+Name: foreign, Length: 26, dtype: bool</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># apply the filter to the dataset</span>
+<span class="n">auto</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[72]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>make</th>
+      <th>price</th>
+      <th>mpg</th>
+      <th>repairs</th>
+      <th>weight</th>
+      <th>length</th>
+      <th>foreign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3 </th>
+      <td>   Audi</td>
+      <td> 9690</td>
+      <td> 17</td>
+      <td> 5</td>
+      <td> 2830</td>
+      <td> 189</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>4 </th>
+      <td>   Audi</td>
+      <td> 6295</td>
+      <td> 23</td>
+      <td> 3</td>
+      <td> 2070</td>
+      <td> 174</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>5 </th>
+      <td>    BMW</td>
+      <td> 9735</td>
+      <td> 25</td>
+      <td> 4</td>
+      <td> 2650</td>
+      <td> 177</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td> Datsun</td>
+      <td> 6229</td>
+      <td> 23</td>
+      <td> 4</td>
+      <td> 2370</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td> Datsun</td>
+      <td> 4589</td>
+      <td> 35</td>
+      <td> 5</td>
+      <td> 2020</td>
+      <td> 165</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td> Datsun</td>
+      <td> 5079</td>
+      <td> 24</td>
+      <td> 4</td>
+      <td> 2280</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td> Datsun</td>
+      <td> 8129</td>
+      <td> 21</td>
+      <td> 4</td>
+      <td> 2750</td>
+      <td> 184</td>
+      <td> 1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># subset is still a df object</span>
+
+<span class="nb">type</span><span class="p">(</span><span class="n">auto</span><span class="p">[</span><span class="n">mask</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[73]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.frame.DataFrame</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># easily create a new dataframe from the subset</span>
+
+<span class="n">foreign</span> <span class="o">=</span> <span class="n">auto</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+
+<span class="n">foreign</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[74]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>make</th>
+      <th>price</th>
+      <th>mpg</th>
+      <th>repairs</th>
+      <th>weight</th>
+      <th>length</th>
+      <th>foreign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3 </th>
+      <td>   Audi</td>
+      <td> 9690</td>
+      <td> 17</td>
+      <td> 5</td>
+      <td> 2830</td>
+      <td> 189</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>4 </th>
+      <td>   Audi</td>
+      <td> 6295</td>
+      <td> 23</td>
+      <td> 3</td>
+      <td> 2070</td>
+      <td> 174</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>5 </th>
+      <td>    BMW</td>
+      <td> 9735</td>
+      <td> 25</td>
+      <td> 4</td>
+      <td> 2650</td>
+      <td> 177</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td> Datsun</td>
+      <td> 6229</td>
+      <td> 23</td>
+      <td> 4</td>
+      <td> 2370</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td> Datsun</td>
+      <td> 4589</td>
+      <td> 35</td>
+      <td> 5</td>
+      <td> 2020</td>
+      <td> 165</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td> Datsun</td>
+      <td> 5079</td>
+      <td> 24</td>
+      <td> 4</td>
+      <td> 2280</td>
+      <td> 170</td>
+      <td> 1</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td> Datsun</td>
+      <td> 8129</td>
+      <td> 21</td>
+      <td> 4</td>
+      <td> 2750</td>
+      <td> 184</td>
+      <td> 1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># apply the inverse filter (rows where &quot;foreign&quot;==0)</span>
+
+<span class="n">domestic</span> <span class="o">=</span> <span class="n">auto</span><span class="p">[</span><span class="n">numpy</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">mask</span><span class="p">)]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">domestic</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[76]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>make</th>
+      <th>price</th>
+      <th>mpg</th>
+      <th>repairs</th>
+      <th>weight</th>
+      <th>length</th>
+      <th>foreign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0 </th>
+      <td>       AMC</td>
+      <td> 4099</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2930</td>
+      <td> 186</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>1 </th>
+      <td>       AMC</td>
+      <td> 4749</td>
+      <td> 17</td>
+      <td> 3</td>
+      <td> 3350</td>
+      <td> 173</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>2 </th>
+      <td>       AMC</td>
+      <td> 3799</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2640</td>
+      <td> 168</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>6 </th>
+      <td>     Buick</td>
+      <td> 4816</td>
+      <td> 20</td>
+      <td> 3</td>
+      <td> 3250</td>
+      <td> 196</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>7 </th>
+      <td>     Buick</td>
+      <td> 7827</td>
+      <td> 15</td>
+      <td> 4</td>
+      <td> 4080</td>
+      <td> 222</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td> Chevrolet</td>
+      <td> 5705</td>
+      <td> 16</td>
+      <td> 4</td>
+      <td> 3690</td>
+      <td> 212</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td> Chevrolet</td>
+      <td> 4504</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 3180</td>
+      <td> 193</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td> Chevrolet</td>
+      <td> 5104</td>
+      <td> 22</td>
+      <td> 2</td>
+      <td> 3220</td>
+      <td> 200</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td> Chevrolet</td>
+      <td> 3667</td>
+      <td> 24</td>
+      <td> 2</td>
+      <td> 2750</td>
+      <td> 179</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td> Chevrolet</td>
+      <td> 3955</td>
+      <td> 19</td>
+      <td> 3</td>
+      <td> 3430</td>
+      <td> 197</td>
+      <td> 0</td>
+    </tr>
+  </tbody>
+</table>
+<p>19 rows × 7 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># subset by combining column criteria</span>
+
+<span class="n">mask2</span> <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="n">auto</span><span class="o">.</span><span class="n">mpg</span><span class="o">&gt;</span><span class="mi">20</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">auto</span><span class="o">.</span><span class="n">price</span><span class="o">&lt;</span><span class="mi">5000</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">auto</span><span class="p">[</span><span class="n">mask2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[77]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>make</th>
+      <th>price</th>
+      <th>mpg</th>
+      <th>repairs</th>
+      <th>weight</th>
+      <th>length</th>
+      <th>foreign</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0 </th>
+      <td>       AMC</td>
+      <td> 4099</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2930</td>
+      <td> 186</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>2 </th>
+      <td>       AMC</td>
+      <td> 3799</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 2640</td>
+      <td> 168</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>9 </th>
+      <td>     Buick</td>
+      <td> 4453</td>
+      <td> 26</td>
+      <td> 3</td>
+      <td> 2230</td>
+      <td> 170</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td> Chevrolet</td>
+      <td> 3299</td>
+      <td> 29</td>
+      <td> 3</td>
+      <td> 2110</td>
+      <td> 163</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td> Chevrolet</td>
+      <td> 4504</td>
+      <td> 22</td>
+      <td> 3</td>
+      <td> 3180</td>
+      <td> 193</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td> Chevrolet</td>
+      <td> 3667</td>
+      <td> 24</td>
+      <td> 2</td>
+      <td> 2750</td>
+      <td> 179</td>
+      <td> 0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>    Datsun</td>
+      <td> 4589</td>
+      <td> 35</td>
+      <td> 5</td>
+      <td> 2020</td>
+      <td> 165</td>
+      <td> 1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.14-The-crime-dataset">4.14 The crime dataset<a class="anchor-link" href="#4.14-The-crime-dataset">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># load data</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">&#39;https://raw.github.com/alfredessa/pdacookbook/master/data/crime.csv&#39;</span>
+
+<span class="n">crime</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># verify data</span>
+<span class="n">crime</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[79]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>State</th>
+      <th>Type of Crime</th>
+      <th>Crime</th>
+      <th>Year</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td> Alabama</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1960</td>
+      <td> 406</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td> Alabama</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1961</td>
+      <td> 427</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td> Alabama</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1962</td>
+      <td> 316</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td> Alabama</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1963</td>
+      <td> 340</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td> Alabama</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1964</td>
+      <td> 316</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># create a mask</span>
+<span class="n">mask3</span> <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="n">crime</span><span class="o">.</span><span class="n">State</span><span class="o">==</span><span class="s">&#39;California&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">crime</span><span class="o">.</span><span class="n">Crime</span><span class="o">==</span><span class="s">&quot;Murder and nonnegligent Manslaughter&quot;</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># apply the mask</span>
+<span class="n">cal_murder</span> <span class="o">=</span> <span class="n">crime</span><span class="p">[</span><span class="n">mask3</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># verify </span>
+<span class="n">cal_murder</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[82]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>State</th>
+      <th>Type of Crime</th>
+      <th>Crime</th>
+      <th>Year</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1288</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1960</td>
+      <td>  616</td>
+    </tr>
+    <tr>
+      <th>1289</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1961</td>
+      <td>  605</td>
+    </tr>
+    <tr>
+      <th>1290</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1962</td>
+      <td>  657</td>
+    </tr>
+    <tr>
+      <th>1291</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1963</td>
+      <td>  673</td>
+    </tr>
+    <tr>
+      <th>1292</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 1964</td>
+      <td>  740</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1329</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 2001</td>
+      <td> 2206</td>
+    </tr>
+    <tr>
+      <th>1330</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 2002</td>
+      <td> 2395</td>
+    </tr>
+    <tr>
+      <th>1331</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 2003</td>
+      <td> 2407</td>
+    </tr>
+    <tr>
+      <th>1332</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 2004</td>
+      <td> 2392</td>
+    </tr>
+    <tr>
+      <th>1333</th>
+      <td> California</td>
+      <td> Violent Crime</td>
+      <td> Murder and nonnegligent Manslaughter</td>
+      <td> 2005</td>
+      <td> 2503</td>
+    </tr>
+  </tbody>
+</table>
+<p>46 rows × 5 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># plot the data</span>
+
+<span class="n">cal_murder</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s">&#39;Count&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[83]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f93b3eb3fd0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+c5gAAAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
 </div>
 </div>
 

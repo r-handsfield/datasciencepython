@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# start ipython notebook server pointing
-# to current directory
 
+# move to python data science
+cd ~/Dev/python/datasciencepython;
+
+# start ipython notebook server
 ipython notebook;
